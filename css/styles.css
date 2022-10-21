@@ -132,6 +132,7 @@ body {
   color: var(--title-text-color);
   padding: 32px 0;
   display: block;
+  transition: color 250ms var(--transition-timing-function);
 }
 
 .current:after {
@@ -261,7 +262,7 @@ body {
   margin: 0 auto;
   border: none;
   transform: scale(1);
-  transition: scale 250ms var(--transition-timing-function);
+  transition: transform 250ms var(--transition-timing-function);
 }
 
 .main-btn:hover,
@@ -277,7 +278,8 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms var(--transition-timing-function);
+  transition: opacity 250ms var(--transition-timing-function),
+    visibility 250ms var(--transition-timing-function);
 }
 
 .backdrop.is-hidden {
@@ -482,8 +484,8 @@ body {
   align-items: center;
   justify-content: center;
   color: #afb1bb;
-  transition: color 250ms var(--transition-timing-function) background-color
-    250ms var(--transition-timing-function);
+  transition: color 250ms var(--transition-timing-function),
+    background-color 250ms var(--transition-timing-function);
 }
 
 .team-soc-icon {
@@ -522,9 +524,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(0.9);
-  transition: scale 250ms var(--transition-timing-function) color 250ms
-    var(--transition-timing-function);
+  transform: scale(1);
+  transition: transforme 250ms var(--transition-timing-function),
+    color 250ms var(--transition-timing-function),
+    border 250ms var(--transition-timing-function);
 }
 
 .client-link:hover,
@@ -583,7 +586,7 @@ body {
   letter-spacing: var(--main-letter-spacing);
   color: var(--footer-text-color);
   cursor: pointer;
-  transform: color 250ms var(--transition-timing-function);
+  transition: color 250ms var(--transition-timing-function);
 }
 
 .footer-link:hover,
@@ -621,6 +624,7 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--main-text-color);
+  transition: color 250ms var(--transition-timing-function);
 }
 .footer-soc-icon {
   fill: currentColor;
@@ -658,9 +662,9 @@ body {
   border-radius: 4px;
   border: none;
   padding: 6px 22px;
-  transition: box-shadow 250ms var(--transition-timing-function)
-    background-color 250ms var(--transition-timing-function) color 250ms
-    var(--transition-timing-function);
+  transition: box-shadow 250ms var(--transition-timing-function),
+    background-color 250ms var(--transition-timing-function),
+    color 250ms var(--transition-timing-function);
 }
 
 .nav-btn {
